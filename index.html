@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -5,72 +7,354 @@
   <title>Fortress Care - Compassionate Care Services</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img src="logo.jpg" alt="Fortress Care Logo" class="logo" />
-      <h1>Fortress Care</h1>
-      <p>Your trusted Qualified Service Provider in North Dakota</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="logo.jpg" alt="Fortress Care Logo" />
+        <span>Fortress Care</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-choose">Why Choose Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="highlight">Fortress Care</span>
+          <br>Compassionate Care Services
+        </h1>
+        <p class="hero-subtitle">Your trusted Qualified Service Provider in North Dakota, dedicated to improving lives through personalized care and support.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Available</div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section class="about container">
-    <h2>About Us</h2>
-    <p>
-      Fortress Care is a trusted Qualified Service Provider (QSP) agency in North Dakota,
-      offering compassionate, reliable, and personalized care services. As a DBA of Quintons Global,
-      we're dedicated to supporting individuals with special needs and disabilities, helping them live
-      safely, comfortably, and independently at home.
-    </p>
-  </section>
-
-  <section class="why container">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Trained and compassionate caregivers</li>
-      <li>Flexible scheduling to fit your needs</li>
-      <li>Locally owned and operated in North Dakota</li>
-      <li>Dedicated to improving quality of life</li>
-    </ul>
-  </section>
-
-  <section class="services container">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Qualified Service Provider (QSP) Care</li>
-      <li>Personal Care Assistance</li>
-      <li>Homemaker Services</li>
-      <li>Respite Care</li>
-      <li>Non-Medical Transportation</li>
-      <li>Companionship & Supportive Services</li>
-      <li>Specialized Personal Assistance</li>
-    </ul>
-  </section>
-
-  <section class="areas container">
-    <h2>Service Areas</h2>
-    <p>Bismarck | Mandan | Lincoln | Surrounding Areas</p>
-  </section>
-
-  <section class="contact container">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 701-979-4437 | 561-800-6877</p>
-    <p><strong>Email:</strong> christine.jshepherd@gmail.com | info@quintonsglobalnd.com</p>
-    <p><strong>Address:</strong> 4007 State Street, Suite 104-A, Bismarck, ND 58503</p>
-
-    <form action="https://formspree.io/f/xwpbbznq" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
+  <!-- About Section -->
+  <section class="about section" id="about">
     <div class="container">
-      <p>&copy; 2025 Fortress Care. All rights reserved.</p>
+      <div class="section-header">
+        <h2>About Fortress Care</h2>
+        <p class="section-subtitle">Dedicated to providing exceptional care services in North Dakota</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Fortress Care is a trusted Qualified Service Provider (QSP) agency in North Dakota,
+            offering compassionate, reliable, and personalized care services. As a DBA of Quintons Global,
+            we're dedicated to supporting individuals with special needs and disabilities, helping them live
+            safely, comfortably, and independently at home.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <i class="fas fa-heart"></i>
+              <span>Compassionate Care</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Trusted Provider</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-home"></i>
+              <span>Home-Based Services</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose section" id="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Fortress Care?</h2>
+        <p class="section-subtitle">We stand out through our commitment to excellence and personalized care</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3>Trained Caregivers</h3>
+          <p>Our team consists of professionally trained and compassionate caregivers dedicated to your well-being.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Flexible Scheduling</h3>
+          <p>We offer flexible scheduling options to fit your unique needs and lifestyle preferences.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Locally Owned</h3>
+          <p>Proudly locally owned and operated in North Dakota, understanding our community's needs.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Quality of Life</h3>
+          <p>Dedicated to improving quality of life and promoting independence for all our clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Comprehensive care services tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3>QSP Care</h3>
+          <p>Qualified Service Provider care for individuals with special needs and disabilities.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-hands-helping"></i>
+          </div>
+          <h3>Personal Care</h3>
+          <p>Comprehensive personal care assistance for daily living activities.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Homemaker Services</h3>
+          <p>Professional homemaker services to maintain a clean and organized living environment.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-pause-circle"></i>
+          </div>
+          <h3>Respite Care</h3>
+          <p>Temporary relief care services for primary caregivers and family members.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Transportation</h3>
+          <p>Safe and reliable non-medical transportation services.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Companionship</h3>
+          <p>Companionship and supportive services for emotional well-being.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="areas section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Service Areas</h2>
+        <p class="section-subtitle">Proudly serving North Dakota communities</p>
+      </div>
+      <div class="areas-content">
+        <div class="area-item">
+          <i class="fas fa-map-pin"></i>
+          <span>Bismarck</span>
+        </div>
+        <div class="area-item">
+          <i class="fas fa-map-pin"></i>
+          <span>Mandan</span>
+        </div>
+        <div class="area-item">
+          <i class="fas fa-map-pin"></i>
+          <span>Lincoln</span>
+        </div>
+        <div class="area-item">
+          <i class="fas fa-map-pin"></i>
+          <span>Surrounding Areas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p class="section-subtitle">Get in touch to learn more about our services</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>701-979-4437 | 561-800-6877</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>christine.jshepherd@gmail.com<br>info@quintonsglobalnd.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Address</h4>
+              <p>4007 State Street, Suite 104-A<br>Bismarck, ND 58503</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="logo.jpg" alt="Fortress Care Logo" />
+          <span>Fortress Care</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fortress Care. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
